@@ -1,0 +1,6 @@
+export const STATE_CHANGE = "STATE_CHANGE";
+export const CITIES_CHANGE = "CITIES_CHANGE";
+export const LOCATION_CHANGE = "LOCATION_CHANGE";
+export const ZOOM_LEVEL = "ZOOM_LEVEL";
+export const MAP_CENTER = "MAP_CENTER";
+export const LOADING_STATUS = "LOADING_STATUS";

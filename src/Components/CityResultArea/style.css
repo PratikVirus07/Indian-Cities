@@ -1,0 +1,40 @@
+:root{
+  font-size: 16px;
+}
+
+.cities {
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+ .myState {
+  text-transform: uppercase;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+  background-color: #f0134d;
+  padding: 8px;
+  border-bottom: 1px solid grey;
+  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: 7px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin:auto;
+  font-weight: 800;
+  /* display: none; */
+} 
+
+.myCityList{
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom:1px solid black;
+  background-color: #bbe1fa;
+  padding:10px;
+}
+
+@media (max-width: 996px) {
+  .city-list {
+    height: 45vh;
+  }
+}

@@ -1,0 +1,11 @@
+.loader {
+    z-index: 10;
+    position: absolute;
+    top: 40vh;
+    right:20vw;
+  }
+
+.mapArea{
+  height: 90vh;
+  width: 100%;
+}  
