@@ -12,19 +12,25 @@ class input extends Component {
         super(props)
     
         this.state = {
-             initialStateValue : "Chose State"
+             initialStateValue : ""
         }
+    }
+
+    changeStateValue = (event) => {
+        this.setState({
+            initialStateValue: event.target.value
+        })
     }
     
 
-    selectState = async event => {
+    selectState =  async (selectedState) => {
 
-        this.setState({
-            initialStateValue:event.target.value
-        })
+        // this.setState({
+        //     initialStateValue:event.target.value
+        // })
 
         locationArray = [];
-        let selectedState = event.target.value;
+        // let selectedState = event.target.value;
         this.props.stateChange(selectedState)
         this.props.loadingStatus(true)
         await this.getState(selectedState)
@@ -76,8 +82,8 @@ class input extends Component {
     render() {
         return (
             <div className="dropdown m-2 myInput">
-                <select value={this.state.initialStateValue} onChange={this.selectState} className='btn btn-light dropdown-toggle'>
-                    <option value="state">
+                <select value={this.state.initialStateValue} onChange={this.changeStateValue} className='btn btn-light dropdown-toggle inputArea'>
+                    <option value="">
                         Choose State
                     </option>
                     {
@@ -88,6 +94,7 @@ class input extends Component {
                         ))
                     }
                 </select>
+                <button className="getCitiesButton" onClick={() => this.selectState(this.state.initialStateValue)}>Get Cities</button>
             </div>
         )
     }
