@@ -5,7 +5,7 @@ const initialState = {
     cities : [],
     cityLocations : [],
     zoomLevel : 4.8,
-    mapCenter : {lat: 28.7040592, lng: 77.10249019999999},
+    mapCenter : {lat: 23.168770, lng: 79.931847},
     isLoading : false
 }
 
