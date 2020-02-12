@@ -21,7 +21,7 @@ class MapResult extends Component {
                         color="#0f4c75"
                         height={150}
                         width={150}
-                        timeout = {5000}
+                        timeout = {10000}
                         />
                     )
                     :null

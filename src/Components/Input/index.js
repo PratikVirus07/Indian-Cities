@@ -34,7 +34,7 @@ class input extends Component {
             const cityData = await this.getCities(selectedState)
             const citiesJSON = await cityData.json();
             this.props.cityChange(citiesJSON)
-            for(let i=0; i<20; i++){
+            for(let i=0; i<30; i++){
                 await this.getLocation(citiesJSON[i])
             }
             this.props.locationChange(locationArray)
