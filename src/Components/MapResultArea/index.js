@@ -21,7 +21,7 @@ class MapResult extends Component {
                         color="#0f4c75"
                         height={150}
                         width={150}
-                        timeout = {10000}
+                        timeout = {5000}
                         />
                     )
                     :null
@@ -42,7 +42,7 @@ class MapResult extends Component {
                             lat={loc.location.lat}
                             lng={loc.location.lng}
                             name={loc.name}
-                            color="#f0134d"
+                            color="#192965"
                             />
                     ))
                     : console.log("Empty")}

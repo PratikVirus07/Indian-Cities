@@ -13,11 +13,12 @@
 .getCitiesButton{
     margin: 10px;
     height:35px;
+    background-color: #fd5e53;
     width: 100px;
-    border: 19x solid #333333;
+    border: 1px solid #333333;
     outline: none;
-    border-radius: 15px;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 20px;
     font-weight: 600;
     font-family: 'Times New Roman', Times, serif;
 
